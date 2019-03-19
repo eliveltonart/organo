@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 /* ROTAS PADRÕES DO SISTEMA */
 
+Route::get('/', ['uses' => 'Site@home']);
 Route::get('/login', ['uses' => 'Login@login']);
